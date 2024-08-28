@@ -4,4 +4,5 @@ WORKDIR /app
 COPY . .
 RUN npm install && cd client && npm install && cd .. && npm run build
 EXPOSE 80
+EXPOSE 443
 CMD ["npm", "run", "start"]
