@@ -2,7 +2,7 @@ export const App = () => {
   return (
     <div>
       <h1>Ben Turner</h1>
-      <h3>Program Director - Web Development</h3>
+      <h3>Senior Software Engineer</h3>
       <ul>
         <li>
           <a href="https://github.com/bbgrabbag" target="__blank">GitHub</a>
