@@ -3,6 +3,7 @@ export const App = () => {
     <div>
       <h1>Ben Turner</h1>
       <h3>Senior Software Engineer</h3>
+          <a href="https://territories.ai" target="__blank">Territories.ai</a>
       <ul>
         <li>
           <a href="https://github.com/bbgrabbag" target="__blank">GitHub</a>
