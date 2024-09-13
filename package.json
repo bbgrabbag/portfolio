@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo Test result: Success && exit 0",
+    "test": "cd client && npm t",
     "start": "dotenv -- node .",
     "dev": "cd client && npm run dev",
     "build": "cd client && npm run build",
