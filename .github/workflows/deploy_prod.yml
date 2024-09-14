@@ -7,14 +7,9 @@ jobs:
   deploy:
     name: Deploy to S3
     runs-on: ubuntu-latest
-    # strategy:
-    #   matrix:
-    #     node-version: ["22.1.0"]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      # - name: Use Node.js ${{ matrix.node-version }}
-      #   uses: actions/setup-node@v4
       - name: Clean install dependencies
         run: npm ci
       - name: Deploy
