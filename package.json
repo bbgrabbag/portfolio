@@ -6,9 +6,6 @@
   "scripts": {
     "turbo": "turbo"
   },
-  "engines": {
-    "node": "^18.20.4"
-  },
   "author": "",
   "license": "ISC",
   "workspaces": [
@@ -16,6 +13,5 @@
   ],
   "devDependencies": {
     "turbo": "^2.1.2"
-  },
-  "packageManager": "npm@10.7.0"
+  }
 }
