@@ -4,21 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cd client && npm t",
-    "start": "dotenv -- node .",
-    "dev": "cd client && npm run dev",
-    "build": "cd client && npm run build",
-    "deploy": "npm run build && dotenv -- node ./scripts/deploy_prod.js"
+    "turbo": "turbo"
+  },
+  "engines": {
+    "node": "22.1.0"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
+  "workspaces": [
+    "apps/*"
+  ],
   "devDependencies": {
-    "@aws-sdk/client-s3": "^3.650.0",
-    "@aws-sdk/credential-providers": "^3.650.0",
-    "dotenv-cli": "^7.4.2",
-    "nodemon": "^3.1.4"
-  }
+    "turbo": "^2.1.2"
+  },
+  "packageManager": "npm@10.7.0"
 }

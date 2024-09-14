@@ -1,5 +1,4 @@
-#!/env/node
-const { S3Client, PutObjectCommand, EncodingType } = require('@aws-sdk/client-s3');
+const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
 const { fromEnv } = require("@aws-sdk/credential-providers");
 const { promises: fs, createReadStream } = require('fs');
 const mime = require('mime-types')
@@ -21,7 +20,7 @@ const getBuildFiles = async (filepath) => {
 }
 
 const deploy = async (bucket) => {
-    process.chdir(path.resolve(__dirname, '..', 'client', 'dist'))
+    process.chdir(path.resolve(__dirname, '..', 'dist'))
     const files = await getBuildFiles('./');
     await Promise.all(files.map(async file => {
         const filepath = file.parentPath === './' ? file.name : file.parentPath + '/' + file.name
