@@ -19,7 +19,14 @@
         },
         "lint": {},
         "format": {},
-        "deploy:prod": {
+        "deploy:prod:ci": {
+            "dependsOn": [
+                "lint",
+                "test",
+                "build"
+            ]
+        },
+        "deploy:prod:local": {
             "dependsOn": [
                 "lint",
                 "test",
