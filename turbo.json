@@ -22,7 +22,7 @@
         },
         "lint": {},
         "format": {},
-        "deploy:prod": {
+        "deploy": {
             "dependsOn": [
                 "lint",
                 "test",

@@ -13,7 +13,7 @@ jobs:
       - name: Clean install dependencies
         run: npm ci
       - name: Deploy
-        run: npm run turbo -- deploy:prod
+        run: npm run turbo -- deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

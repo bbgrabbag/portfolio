@@ -4,7 +4,7 @@
         "//"
     ],
     "tasks": {
-        "deploy:prod": {
+        "deploy": {
             "env": [
                 "AWS_ACCESS_KEY_ID",
                 "AWS_SECRET_ACCESS_KEY",
