@@ -2,12 +2,11 @@
   "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "turbo": "turbo"
   },
   "engines": {
-    "node": "22.1.0"
+    "node": "^18.0.0"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +15,9 @@
   ],
   "devDependencies": {
     "turbo": "^2.1.2"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
   },
   "packageManager": "npm@10.7.0"
 }
