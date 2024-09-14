@@ -9,8 +9,7 @@
     "test": "vitest run",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy:prod:local": "dotenv -- node ./scripts/deploy_prod.cjs",
-    "deploy:prod:ci": "node ./scripts/deploy_prod.cjs"
+    "deploy:prod": "dotenv -- ./scripts/deploy_prod.cjs"
   },
   "dependencies": {
     "react": "^18.2.0",
