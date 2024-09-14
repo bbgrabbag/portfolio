@@ -1,12 +1,15 @@
 const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
-const { fromEnv } = require("@aws-sdk/credential-providers");
 const { promises: fs, createReadStream } = require('fs');
 const mime = require('mime-types')
 const path = require('path');
 
+
 const s3 = new S3Client({
     region: 'us-east-1',
-    credentials: fromEnv()
+    credentials: {
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+    }
 });
 
 const getBuildFiles = async (filepath) => {
@@ -37,7 +40,7 @@ const deploy = async (bucket) => {
 }
 
 try {
-    deploy('bturnerdev.com').then((files) => {
+    deploy(process.env.S3_BUCKET_NAME).then((files) => {
         console.log('\nDeployment Successful\n')
         console.log('Files deployed:')
         files.forEach(file => console.log('- ', path.resolve(file.parentPath, file.name)))
