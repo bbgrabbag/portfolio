@@ -8,14 +8,14 @@ jobs:
   test:
     name: Run Unit Tests
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: ["22.1.0"]
+    # strategy:
+    #   matrix:
+    #     node-version: ["22.1.0"]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+      # - name: Use Node.js ${{ matrix.node-version }}
+      #   uses: actions/setup-node@v4
       - name: Install dependencies
         run: npm i
       - name: Run Test
