@@ -20,11 +20,10 @@
         "format": {},
         "deploy:prod": {
             "dependsOn": [
-                "^lint",
-                "^test",
-                "^build"
-            ],
-            "cache": false
+                "lint",
+                "test",
+                "build"
+            ]
         },
         "test": {}
     }
