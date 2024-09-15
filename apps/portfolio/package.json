@@ -10,7 +10,7 @@
     "test": "vitest run",
     "encrypt": "dotenvx encrypt -f .env.prod -f .env.qa",
     "deploy:prod": "dotenvx run -f .env.prod -- node ./scripts/deploy.cjs",
-    "deploy:qa": "dotenvx run -f .env.qa -- ./scripts/deploy.cjs"
+    "deploy:qa": "dotenvx run -f .env.qa -- node ./scripts/deploy.cjs"
   },
   "dependencies": {
     "vue": "^3.4.37"
