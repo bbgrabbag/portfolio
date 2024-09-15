@@ -4,6 +4,7 @@
 <template>
   <div data-testid='app'>
       <h1 data-testid='app-title'>Ben Turner</h1>
+      <h2>Salt Lake City, UT</h2>
       <h3>Senior Frontend Developer</h3>
           <a href="https://territories.ai" target="__blank">Territories.ai</a>
       <ul>
