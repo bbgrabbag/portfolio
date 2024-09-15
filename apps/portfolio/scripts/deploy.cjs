@@ -2,7 +2,7 @@
 
 const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
 const { promises: fs, createReadStream } = require('fs');
-const mime = require('mime-types')
+const mime = require('mime-types');
 const path = require('path');
 
 
@@ -19,7 +19,7 @@ const getBuildFiles = async (filepath) => {
         const files = await fs.readdir(filepath, { recursive: true, withFileTypes: true });
         return files.filter(file => !file.isDirectory())
     } catch (err) {
-        console.log('Error: deploy_prod.js getBuildFiles() failed')
+        console.log('Error: deploy.cjs getBuildFiles() failed')
         console.log(err)
     }
 }
@@ -48,7 +48,7 @@ try {
         files.forEach(file => console.log('- ', path.resolve(file.parentPath, file.name)))
     });
 } catch (err) {
-    console.log('Error: deploy_prod.js deploy() failed')
+    console.log('Error: deploy.cjs deploy() failed')
     console.log(err)
 }
 
