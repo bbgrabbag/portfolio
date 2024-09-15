@@ -13,8 +13,6 @@ jobs:
       - name: Clean install dependencies
         run: npm ci
       - name: Deploy
-        run: npm run deploy:prod:ci
+        run: npm run deploy:prod
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+          DOTENV_PRIVATE_KEY_PROD: ${{ secrets.DOTENV_PRIVATE_KEY_QA }}
