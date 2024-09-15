@@ -19,14 +19,15 @@
         },
         "lint": {},
         "format": {},
-        "deploy:prod:ci": {
+        "encrypt": {},
+        "deploy:prod": {
             "dependsOn": [
                 "lint",
                 "test",
                 "build"
             ]
         },
-        "deploy:prod:local": {
+        "deploy:qa": {
             "dependsOn": [
                 "lint",
                 "test",

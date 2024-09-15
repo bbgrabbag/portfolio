@@ -4,8 +4,9 @@
   "description": "",
   "scripts": {
     "turbo": "turbo",
-    "deploy:prod:ci": "turbo run deploy:prod:ci",
-    "deploy:prod:local": "turbo run deploy:prod:local",
+    "deploy:prod": "turbo run deploy:prod",
+    "deploy:qa": "turbo run deploy:qa",
+    "encrypt": "turbo run encrypt",
     "test": "turbo run test",
     "dev": "turbo run dev",
     "lint": "turbo run lint",

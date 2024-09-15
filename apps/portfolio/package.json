@@ -8,8 +8,9 @@
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "deploy:prod:local": "dotenvx run -f .env.prod.local -- ./scripts/deploy.cjs",
-    "deploy:prod:ci": "./scripts/deploy.cjs"
+    "encrypt": "dotenvx encrypt -f .env.prod -f .env.qa",
+    "deploy:prod": "dotenvx run -f .env.prod -- ./scripts/deploy.cjs",
+    "deploy:qa": "dotenvx run -f .env.qa -- ./scripts/deploy.cjs"
   },
   "dependencies": {
     "vue": "^3.4.37"
