@@ -1,8 +1,5 @@
 {
     "$schema": "https://turbo.build/schema.json",
-    "globalDependencies": [
-        ".env"
-    ],
     "tasks": {
         "build": {
             "dependsOn": [
@@ -22,7 +19,14 @@
         },
         "lint": {},
         "format": {},
-        "deploy": {
+        "deploy:prod:ci": {
+            "dependsOn": [
+                "lint",
+                "test",
+                "build"
+            ]
+        },
+        "deploy:prod:local": {
             "dependsOn": [
                 "lint",
                 "test",

@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "turbo": "turbo"
+    "turbo": "turbo",
+    "deploy:prod:ci": "turbo run deploy:prod:ci",
+    "deploy:prod:local": "turbo run deploy:prod:local",
+    "test": "turbo run test",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "turbo run format"
   },
   "engines": {
     "node": ">=18.0.0"
