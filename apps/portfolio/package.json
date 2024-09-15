@@ -9,8 +9,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "encrypt": "dotenvx encrypt -f .env.prod -f .env.qa",
-    "deploy:prod": "dotenvx run -f .env.prod -- ./scripts/deploy.cjs",
-    "deploy:qa": "dotenvx run -f .env.qa -- ./scripts/deploy.cjs"
+    "deploy": "dotenvx run -- ./scripts/deploy.cjs"
   },
   "dependencies": {
     "vue": "^3.4.37"

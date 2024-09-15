@@ -4,8 +4,7 @@
   "description": "",
   "scripts": {
     "turbo": "turbo",
-    "deploy:prod": "turbo run deploy:prod",
-    "deploy:qa": "turbo run deploy:qa",
+    "deploy": "turbo run deploy",
     "encrypt": "turbo run encrypt",
     "test": "turbo run test",
     "dev": "turbo run dev",

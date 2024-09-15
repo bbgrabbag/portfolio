@@ -19,15 +19,10 @@
         },
         "lint": {},
         "format": {},
-        "encrypt": {},
-        "deploy:prod": {
-            "dependsOn": [
-                "lint",
-                "test",
-                "build"
-            ]
+        "encrypt": {
+            "outputs": [".env.keys"]
         },
-        "deploy:qa": {
+        "deploy": {
             "dependsOn": [
                 "lint",
                 "test",
