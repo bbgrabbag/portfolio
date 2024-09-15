@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
 const { promises: fs, createReadStream } = require('fs');
 const mime = require('mime-types');

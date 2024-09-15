@@ -6,16 +6,14 @@
     "tasks": {
         "deploy:prod": {
             "env": [
-                "AWS_ACCESS_KEY_ID",
-                "AWS_SECRET_ACCESS_KEY",
-                "S3_BUCKET_NAME"
+                "DOTENV_PRIVATE_KEY_PROD",
+                "DOTENV_PRIVATE_KEY_QA"
             ]
         },
         "deploy:qa": {
             "env": [
-                "AWS_ACCESS_KEY_ID",
-                "AWS_SECRET_ACCESS_KEY",
-                "S3_BUCKET_NAME"
+                "DOTENV_PRIVATE_KEY_PROD",
+                "DOTENV_PRIVATE_KEY_QA"
             ]
         }
     }
