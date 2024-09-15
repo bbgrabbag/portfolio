@@ -42,8 +42,9 @@ const deploy = async (bucket) => {
 }
 
 try {
+    console.log(`\nDeploying to ${process.env.S3_BUCKET_NAME}...\n`)
     deploy(process.env.S3_BUCKET_NAME).then((files) => {
-        console.log('\nDeployment Successful\n')
+        console.log(`\nDeployment to ${process.env.S3_BUCKET_NAME} successful.\n`)
         console.log('Files deployed:')
         files.forEach(file => console.log('- ', path.resolve(file.parentPath, file.name)))
     });

@@ -13,6 +13,6 @@ jobs:
       - name: Clean install dependencies
         run: npm ci
       - name: Deploy
-        run: npm run deploy
+        run: npm run deploy:prod
         env:
-          DOTENV_PRIVATE_KEY_CI: ${{ secrets.DOTENV_PRIVATE_KEY_PROD }}
+          DOTENV_PRIVATE_KEY_PROD: ${{ secrets.DOTENV_PRIVATE_KEY_PROD }}
