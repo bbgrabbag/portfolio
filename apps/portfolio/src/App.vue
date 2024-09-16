@@ -4,7 +4,7 @@
 <template>
   <div data-testid='app'>
       <h1 data-testid='app-title'>Ben Turner</h1>
-      <h2>Salt Lake City, UT</h2>
+      <h2>Salt Lake City, Utah</h2>
       <h3>Senior Frontend Developer</h3>
           <a href="https://territories.ai" target="__blank">Territories.ai</a>
       <ul>
@@ -19,16 +19,4 @@
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
 </style>
