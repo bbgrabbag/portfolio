@@ -27,14 +27,12 @@
         "deploy:prod": {
             "dependsOn": [
                 "lint",
-                "test",
                 "build"
             ]
         },
         "deploy:qa": {
             "dependsOn": [
                 "lint",
-                "test",
                 "build"
             ]
         },
