@@ -1,8 +1,8 @@
 name: Production Deploy
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "release-v[0-9]+.[0-9]+.[0-9]+"
 jobs:
   deploy:
     name: Deploy to S3
